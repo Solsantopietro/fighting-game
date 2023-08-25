@@ -1,0 +1,46 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            overflow: hidden;
+            font-family: 'Press Start 2P', cursive;
+        }
+    </style>
+</head>
+<body style="background-color: #281413;">
+    <div id="" style="position: absolute; display: flex; justify-content: space-between; color: #fff;  top: 23px; left: 35px; bottom: 0; right: 0; z-index: 111111; width: 970px;"><p>Player 1</p><p>Player 2</p></div>
+    
+    <div style="position: relative; display: inline-block; ">
+        <div style=" position: absolute; display: flex; align-items: center; width: 100%; padding: 20px">
+            <!-- vida de player -->
+            <div style="position: relative; border: 4px solid white; width: 100%; height: 30px; border-radius: 200px; display: flex; justify-content: flex-end;">
+                
+                <div style="background-color: red; height: 30px; width: 100%;"></div>
+                <div id='playerHealth' style="position: absolute; background-color: #818cf8; top: 0; right: 0; bottom: 0; width: 100%;"></div>
+            </div>  
+            
+            <!-- timer -->
+            <div id="timer" style="display: flex; align-items: center; justify-content: center;  border: 8px double white; height: 100px; width: 100px; flex-shrink: 0; border-radius: 10px 10px 100px 100px; margin: 0 10px; color: white; font-size: 20px; ">10</div>
+
+            <!-- vida de enemy -->
+            <div style="position: relative; border: 4px solid white;  width: 100%; height: 30px; border-radius: 200px;">
+
+                <div  style="background-color: red; height: 30px;"></div>
+                <div id='enemyHealth' style="position: absolute; background-color: #818cf8; top: 0; right: 0; bottom: 0; left: 0;"></div>
+            </div>
+            
+
+        </div>
+        <div id="displayText" style="position: absolute; color: #fff;  top: 0; left: 0; bottom: 0; right: 0; display: none; align-items: center; justify-content: center;"></div>
+        <canvas></canvas>
+    <div id="" style="position: absolute; display: flex; justify-content: space-between; color: #fff;  bottom: 23px; left: 35px; bottom: 0; right: 0; z-index: 111111; width: 91%;"><p>WASD - Space</p><p>Arrows - M</p></div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/classes.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="index.js"></script>
+</body>
